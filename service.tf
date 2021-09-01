@@ -8,7 +8,7 @@ resource "google_cloud_run_service" "cats" {
     spec {
       service_account_name = google_service_account.text_to_speech_worker.email
       containers {
-        image = "gcr.io/${var.project}/${local.service_name}"
+        image = "gcr.io/${local.project}/${local.service_name}"
       }
     }
   }
