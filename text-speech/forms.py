@@ -12,10 +12,6 @@ class TextToSpeechForm(FlaskForm):
     """
     Create user form for submitting text for speech synthesis
     """
-
-    # set gcloud environment credentials
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
-
     # Instantiates a client
     client = texttospeech.TextToSpeechClient()
 
