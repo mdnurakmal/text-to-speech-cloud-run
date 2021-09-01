@@ -2,6 +2,8 @@
 
 # Usage
 
+1. Create a project in Google Cloud Console then click on the button
+
 [![Run on Google
 Cloud](https://deploy.cloud.run/button.svg)](https://github.com/mdnurakmal/text-to-speech-cloud-run.git)
 
