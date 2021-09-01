@@ -38,10 +38,3 @@ resource "google_cloud_run_service_iam_policy" "noauth" {
   policy_data = data.google_iam_policy.noauth.policy_data
   depends_on  = [google_cloud_run_service.cats]
 }
-
-
-# WORKAROUND 
-data "external" "image_digest" {
-  program = ["bash", "scripts/get_latest_tag.sh", var.project, local.service_name]
-}
-# END WORKAROUND
