@@ -11,8 +11,6 @@ from flask import Flask, request, render_template, flash, redirect, send_file, u
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
 app.config['SECRET_KEY'] = 'bendeghe-ekiem'
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
-
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
