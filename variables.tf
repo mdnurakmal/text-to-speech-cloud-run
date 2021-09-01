@@ -14,6 +14,6 @@ variable "region" {
 
 resource "null_resource" "enforce_remediation" {
   provisioner "local-exec" {
-    command = "echo ${data.google_project.project.projectid}"
+    command = "echo ${data.google_project.project.project_id}"
   }
 }
