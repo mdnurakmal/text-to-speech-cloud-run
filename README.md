@@ -24,6 +24,8 @@ This repository provides an example for deploying applications on Cloud Run that
 4. Build the container using Cloud Build: `gcloud builds submit --tag gcr.io/[PROJECT_ID]/text-speech`.
 5. Deploy to Cloud Run: `gcloud run deploy --image gcr.io/[PROJECT_ID]/text-speech --platform managed`.
 
+# Learning notes
+- Cloud function does not need json credentials but Cl
 
 # Original Repo from
 https://github.com/dvdbisong/text-to-speech-cloud-run
