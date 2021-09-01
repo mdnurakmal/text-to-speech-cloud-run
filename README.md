@@ -17,6 +17,8 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 
 # Learning notes
 - Cloud function does not need json credentials but Cl
+- How to automatically set region from set from cloud shell
+- Error deploying on standalone cloudshell
 
 # Original Repo from
 https://github.com/dvdbisong/text-to-speech-cloud-run
