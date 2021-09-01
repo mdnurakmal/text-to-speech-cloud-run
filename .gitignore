@@ -1,0 +1,12 @@
+/text-speech/__pycache__
+.idea
+.DS_Store
+
+# Terraform
+modules/
+*.tfstate
+terraform.*
+.terraform
+
+# Temporary function archives
+temp/
