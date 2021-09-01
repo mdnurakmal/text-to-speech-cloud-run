@@ -7,9 +7,7 @@ terraform {
   }
 }
 
-provider "google" {
-  project = var.project
-}
+provider "google" {}
 
 locals {
 
