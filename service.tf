@@ -6,7 +6,7 @@ resource "google_cloud_run_service" "cats" {
 
   template {
     spec {
-      service_account_name = google_service_account.cats_worker.email
+      service_account_name = google_service_account.text_to_speech_worker.email
       containers {
         image = "gcr.io/${var.project}/${local.service_name}"
       }

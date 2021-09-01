@@ -23,7 +23,7 @@ resource "google_project_service" "cloudbuild" {
 
 # Create a service account
 resource "google_service_account" "text_to_speech_worker" {
-  account_id   = "text_to_speech_worker_id"
+  account_id   = "text-to-speech-worker-id"
   display_name = "Text To Speech Worker"
 }
 
