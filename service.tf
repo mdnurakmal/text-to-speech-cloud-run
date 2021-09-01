@@ -8,7 +8,7 @@ resource "google_cloud_run_service" "cats" {
     spec {
       service_account_name = google_service_account.cats_worker.email
       containers {
-        image = gcr.io/${var.project}/${local.service_name}
+        image = "gcr.io/${var.project}/${local.service_name}"
       }
     }
   }
