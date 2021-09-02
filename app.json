@@ -2,12 +2,12 @@
     "hooks": {
         "prebuild": {
             "commands": [
-                "gcloud builds submit"
+                "gcloud builds submit $(gcloud projects list --filter="$PROJECT" --format="value(PROJECT_ID)")"
             ]
         },
         "postbuild": {
             "commands": [
-                "terraform init"
+                "terraform init","terraform apply"
             ]
         }
     }
