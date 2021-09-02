@@ -1,4 +1,4 @@
 #!/bin/bash
-gcloud builds commit
+gcloud builds submit
 terraform init
 terraform apply
