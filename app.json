@@ -1,0 +1,14 @@
+{
+    "hooks": {
+        "prebuild": {
+            "commands": [
+                "gcloud builds submit"
+            ]
+        },
+        "postbuild": {
+            "commands": [
+                "terraform init"
+            ]
+        }
+    }
+}
