@@ -1,8 +1,8 @@
 {
     "hooks": {
         "prebuild": {
-            "commands": [
-                "gcloud builds submit $(gcloud projects list --filter="$PROJECT" --format="value(PROJECT_ID)")"
+            "commands": ["PROJECT=gcloud projects list --filter="$PROJECT" --format="value(PROJECT_ID)"",
+                "gcloud builds submit $PROJECT"
             ]
         },
         "postbuild": {
