@@ -23,6 +23,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 - Apparently GOOGLE_ENTRYPOINTit is necessary to set the equivalent of the entry point in the Dockerfile 
 - gcr.io/cloudshell-images/cloudshell:latest is 7+ GB it will cause no space left error
 - os.environ.get('PORT', 8080) set default environment variable PORT to 8080
+- cloud run button does not read cloudbuild.yaml but instead app.json
 
 # Original Repo from
 https://github.com/dvdbisong/text-to-speech-cloud-run

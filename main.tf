@@ -26,6 +26,6 @@ resource "null_resource" "health_check" {
 
  provisioner "local-exec" {
 
-    command = "echo ${data.google_project.project.location}"
+    command = "echo ${data.google_project.project.region}"
   }
 }
