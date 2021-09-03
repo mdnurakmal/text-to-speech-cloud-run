@@ -15,6 +15,7 @@ steps:
 
 options:
  diskSizeGb: '200'
+logStreamingOption: STREAM_ON
 
 substitutions:
   _SERVICE_FOLDER: text-speech
