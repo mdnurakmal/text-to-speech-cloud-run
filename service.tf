@@ -1,5 +1,5 @@
 # The Cloud Run service
-resource "google_cloud_run_service" "cats" {
+resource "google_cloud_run_service" "text_to_speech" {
   name                       = local.service_name
   location                   = var.region
   autogenerate_revision_name = true
@@ -31,10 +31,10 @@ data "google_iam_policy" "noauth" {
 }
 
 resource "google_cloud_run_service_iam_policy" "noauth" {
-  location = google_cloud_run_service.cats.location
-  project  = google_cloud_run_service.cats.project
-  service  = google_cloud_run_service.cats.name
+  location = google_cloud_run_service.text_to_speech.location
+  project  = google_cloud_run_service.text_to_speech.project
+  service  = google_cloud_run_service.text_to_speech.name
 
   policy_data = data.google_iam_policy.noauth.policy_data
-  depends_on  = [google_cloud_run_service.cats]
+  depends_on  = [google_cloud_run_service.text_to_speech]
 }
