@@ -21,6 +21,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 - Error deploying on standalone cloudshell
 - cloud build has different environment variables from cloud shell
 - Apparently GOOGLE_ENTRYPOINTit is necessary to set the equivalent of the entry point in the Dockerfile 
+- gcr.io/cloudshell-images/cloudshell:latest is 7+ GB it will cause no space left error
 
 # Original Repo from
 https://github.com/dvdbisong/text-to-speech-cloud-run
