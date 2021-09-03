@@ -3,9 +3,6 @@
     "build": {
         "skip": true
         },
-    "push": {
-        "skip": true
-        },
     "hooks": {
         "prebuild": {
             "commands": [
