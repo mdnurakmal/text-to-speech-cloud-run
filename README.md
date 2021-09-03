@@ -2,7 +2,9 @@
 
 # Usage
 
-1. Create a project in Google Cloud Console then click on the button
+1. Create a project in Google Cloud Console then click 'Run on  Google' button
+2. Inside gcloud shell select the project to deploy 
+3. Inside gcloud select the region for cloud run 
 
 [![Run on Google
 Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/mdnurakmal/text-to-speech-cloud-run.git)
