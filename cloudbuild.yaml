@@ -18,7 +18,7 @@ options:
 
 substitutions:
   _SERVICE_FOLDER: text-speech
-  _SERVICE_NAME: text-to-speech
+  _SERVICE_NAME: text-to-speech-cloud-run
 
 images:
   - "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}"
