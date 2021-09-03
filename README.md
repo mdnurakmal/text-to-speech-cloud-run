@@ -22,6 +22,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 - cloud build has different environment variables from cloud shell
 - Apparently GOOGLE_ENTRYPOINTit is necessary to set the equivalent of the entry point in the Dockerfile 
 - gcr.io/cloudshell-images/cloudshell:latest is 7+ GB it will cause no space left error
+- os.environ.get('PORT', 8080) set default environment variable PORT to 8080
 
 # Original Repo from
 https://github.com/dvdbisong/text-to-speech-cloud-run
