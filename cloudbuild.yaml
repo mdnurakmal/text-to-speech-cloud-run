@@ -8,8 +8,6 @@ steps:
         "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}",
         "${_SERVICE_FOLDER}",
       ]
-    env:
-    - 'GOOGLE_ENTRYPOINT="exec gunicorn --bind :$PORT --workers 1 --threads 8 app:app"'
 
   - id: "push image"
     name: "gcr.io/cloud-builders/docker"
