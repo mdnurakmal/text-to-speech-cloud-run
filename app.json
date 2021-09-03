@@ -5,7 +5,7 @@
     "hooks": {
         "prebuild": {
             "commands": [
-                "gcloud builds submit"
+                "gcloud builds submit GOOGLE_CLOUD_PROJECT "
             ]
         }
     }
