@@ -20,6 +20,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 - How to automatically set region from set from cloud shell
 - Error deploying on standalone cloudshell
 - cloud build has different environment variables from cloud shell
+- Apparently GOOGLE_ENTRYPOINTit is necessary to set the equivalent of the entry point in the Dockerfile 
 
 # Original Repo from
 https://github.com/dvdbisong/text-to-speech-cloud-run
@@ -27,3 +28,4 @@ https://github.com/dvdbisong/text-to-speech-cloud-run
 # References
 https://towardsdatascience.com/cloud-run-google-cloud-text-to-speech-api-dff308665c70
 https://github.com/GoogleCloudPlatform/serverless-expeditions
+--env GOOGLE_ENTRYPOINT="exec gunicorn --bind :$PORT --workers 1 --threads 8 app:app"
