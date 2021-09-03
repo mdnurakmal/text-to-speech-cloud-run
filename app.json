@@ -1,0 +1,12 @@
+{ 
+    "build": {
+        "skip": true
+        },
+    "hooks": {
+        "prebuild": {
+            "commands": [
+                "gcloud builds submit"
+            ]
+        }
+    }
+}

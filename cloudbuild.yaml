@@ -5,13 +5,13 @@ steps:
       [
         "build",
         "-t",
-        "gcr.io/${PROJECT_ID}/111",
+        "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}",
         "${_SERVICE_FOLDER}",
       ]
 
   - id: "push image"
     name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/${PROJECT_ID}/111"]
+    args: ["push", "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}"]
 
 options:
   logStreamingOption: STREAM_ON
@@ -21,4 +21,4 @@ substitutions:
   _SERVICE_NAME: text-to-speech
 
 images:
-  - "gcr.io/${PROJECT_ID}/111"
+  - "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}"
