@@ -14,8 +14,7 @@ steps:
     args: ["push", "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}"]
 
 options:
- diskSizeGb: '200'
-logStreamingOption: STREAM_ON
+  logStreamingOption: STREAM_ON
 
 substitutions:
   _SERVICE_FOLDER: text-speech
