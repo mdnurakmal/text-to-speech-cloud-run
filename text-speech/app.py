@@ -4,17 +4,21 @@ from forms import TextToSpeechForm
 from flask_bootstrap import Bootstrap
 from google.cloud import texttospeech
 from flask import Flask, request, render_template, flash, redirect, send_file, url_for
+
 # Imports the Google Cloud client library
 from google.cloud import logging
 
 # Instantiates a client
 logging_client = logging.Client()
-logging_client.get_default_handler()
-logging_client.setup_logging()
+
 # The name of the log to write to
-log_name = "my-log"
+log_name = "Translation message"
 # Selects the log to write to
 logger = logging_client.logger(log_name)
+
+# Writes the log entry
+
+
 
 # Use app for GCP
 app = Flask(__name__)
@@ -62,7 +66,8 @@ def translate():
     # Set the text input to be synthesized
     synthesis_input = texttospeech.SynthesisInput(text=messages['text'])
 
-    logger.log_text("Translate: " + messages['text'])
+
+    logger.log_text(messages['text'])
     # Build the voice request, select the language code ("en-US") and the ssml
     # voice gender ("neutral")
     voice = texttospeech.VoiceSelectionParams(
