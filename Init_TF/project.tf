@@ -22,5 +22,6 @@ resource "google_project_service" "cloudbuild" {
 resource "google_project_service" "logging" {
   service = "logging.googleapis.com"
   disable_on_destroy = true
+  disable_dependent_services = true
 }
 
