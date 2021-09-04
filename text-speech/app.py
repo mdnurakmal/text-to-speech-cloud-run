@@ -66,8 +66,8 @@ def translate():
     # Set the text input to be synthesized
     synthesis_input = texttospeech.SynthesisInput(text=messages['text'])
 
-
-    logger.log_text(messages['text'])
+    print(messages['text'])
+    #logger.log_text(messages['text'])
     # Build the voice request, select the language code ("en-US") and the ssml
     # voice gender ("neutral")
     voice = texttospeech.VoiceSelectionParams(
