@@ -9,7 +9,8 @@ from google.cloud import logging
 
 # Instantiates a client
 logging_client = logging.Client()
-
+logging_client.get_default_handler()
+logging_client.setup_logging()
 # The name of the log to write to
 log_name = "my-log"
 # Selects the log to write to
