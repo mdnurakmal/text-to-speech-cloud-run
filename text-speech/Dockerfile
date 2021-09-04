@@ -10,6 +10,7 @@ COPY . .
 RUN pip install flask gunicorn
 RUN pip install flask-wtf
 RUN pip install --upgrade google-cloud-texttospeech
+RUN pip install --upgrade google-cloud-logging
 RUN pip install flask-bootstrap
 
 # Run the web service on container startup. Here we use the gunicorn
