@@ -6,19 +6,15 @@
     "hooks": {
         "prebuild": {
             "commands": [
-                "cd Init_TF",
-                "echo $PWD",
-                "terraform init",
-                "terraform apply -auto-approve",
-                "cd ..",
+                "cd Init_TF && terraform init",
+                "cd Init_TF &&  terraform apply -auto-approve",
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION ",
                 "export TF_VAR_region=$GOOGLE_CLOUD_REGION",
                 "gcloud builds submit",
                 "docker pull gcr.io/${GOOGLE_CLOUD_PROJECT}/text-to-speech-cloud-run",
-                "cd Prov_TF",
-                "terraform init",
-                "terraform apply -auto-approve"
+                "cd Prov_TF &&  terraform init",
+                "cd Prov_TF &&  terraform apply -auto-approve"
             ]
         }
     }
