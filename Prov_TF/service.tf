@@ -16,8 +16,6 @@ resource "google_cloud_run_service" "text_to_speech" {
     percent         = 100
     latest_revision = true
   }
-
-  depends_on = [google_project_service.run]
 }
 
 # Set service public
@@ -34,7 +32,5 @@ resource "google_cloud_run_service_iam_policy" "noauth" {
   location = google_cloud_run_service.text_to_speech.location
   project  = google_cloud_run_service.text_to_speech.project
   service  = google_cloud_run_service.text_to_speech.name
-
   policy_data = data.google_iam_policy.noauth.policy_data
-  depends_on  = [google_cloud_run_service.text_to_speech]
 }
