@@ -26,7 +26,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 - gcr.io/cloudshell-images/cloudshell:latest is 7+ GB it will cause no space left error
 - os.environ.get('PORT', 8080) set default environment variable PORT to 8080
 - cloud run button does not read cloudbuild.yaml but instead app.json
-
+- The google cloud run service is not available in asia-south1 region
 # Original Repo from
 https://github.com/dvdbisong/text-to-speech-cloud-run
 
