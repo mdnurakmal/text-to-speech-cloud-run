@@ -2,9 +2,9 @@
 
 # Usage
 
-1. Create a project in Google Cloud Console then click 'Run on  Google' button
-2. Inside gcloud shell select the project to deploy 
-3. Inside gcloud select the region for cloud run 
+1. Create a project in Google Cloud Console then click 'Run on Google' button
+2. Inside gcloud shell select the project
+3. Inside gcloud select the region 
 
 [![Run on Google
 Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/mdnurakmal/text-to-speech-cloud-run.git)
@@ -18,7 +18,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 <br>
 
 # Learning notes
-- Cloud function does not need json credentials but Cl
+- cloud shell can access GCP credentials without using json
 - How to automatically set region from set from cloud shell
 - Error deploying on standalone cloudshell
 - cloud build has different environment variables from cloud shell
@@ -28,10 +28,14 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 - cloud run button does not read cloudbuild.yaml but instead app.json
 - The google cloud run service is not available in asia-south1 region
 - How to remove deleted service account automatically ?
+- Why cloud run directory is removed and files merged ?
+- How to terraform destroy automatically ?
+
+
 # Original Repo from
 https://github.com/dvdbisong/text-to-speech-cloud-run
 
 # References
 https://towardsdatascience.com/cloud-run-google-cloud-text-to-speech-api-dff308665c70
 https://github.com/GoogleCloudPlatform/serverless-expeditions
---env GOOGLE_ENTRYPOINT="exec gunicorn --bind :$PORT --workers 1 --threads 8 app:app"
+ 
