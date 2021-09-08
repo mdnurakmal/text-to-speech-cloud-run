@@ -25,3 +25,8 @@ resource "google_project_service" "logging" {
   disable_dependent_services = true
 }
 
+resource "google_storage_bucket" "text-to-speech-cloud-run-bucket" {
+  name          = "text-to-speech-cloud-run-bucket"
+  force_destroy = true
+
+}
