@@ -10,5 +10,4 @@ terraform {
     prefix  = "terraform/state"
   }
 
-   depends_on = [google_storage_bucket.tf_state]
 }
