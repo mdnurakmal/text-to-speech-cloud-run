@@ -18,7 +18,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 <br>
 
 # Learning notes
-- cloud shell can access GCP credentials without using json
+- gcloud shell can access GCP credentials without using json if its set using the config set command in gcloud shell
 - How to automatically set region from set from cloud shell
 - Error deploying on standalone cloudshell
 - cloud build has different environment variables from cloud shell
