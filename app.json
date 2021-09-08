@@ -10,10 +10,10 @@
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
                 "gsutil mb gs://text-to-speech-cloud-run-bucket",
 
-                "cd Init_TF && terraform import google_storage_bucket.text-to-speech-cloud-run-bucket text-to-speech-cloud-run-bucket",
                 "cd Init_TF && terraform init",
-
                 "cd Init_TF && terraform apply -auto-approve",
+                "cd Init_TF && terraform import google_storage_bucket.text-to-speech-cloud-run-bucket text-to-speech-cloud-run-bucket",
+           
                 "gcloud builds submit -q",
                 "docker pull gcr.io/${GOOGLE_CLOUD_PROJECT}/text-to-speech-cloud-run",
                 "cd Prov_TF && terraform init",
