@@ -15,7 +15,7 @@
                 "gcloud builds submit -q",
                 "docker pull gcr.io/${GOOGLE_CLOUD_PROJECT}/text-to-speech-cloud-run",
                 "cd Prov_TF && terraform init",
-                "cd Prov_TF && terraform apply -auto-approve var-file=variables.tfvars"
+                "cd Prov_TF && terraform apply -auto-approve"
             ]
         }
     }
