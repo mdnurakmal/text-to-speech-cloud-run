@@ -1,0 +1,1 @@
+region="$GOOGLE_CLOUD_REGION"
