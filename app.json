@@ -9,13 +9,13 @@
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
                 "gsutil mb gs://text-to-speech-cloud-run-bucket",
-                
+
                 "cd Init_TF && terraform init",
                 "cd Init_TF &&  terraform apply -auto-approve",
                 "gcloud builds submit -q",
                 "docker pull gcr.io/${GOOGLE_CLOUD_PROJECT}/text-to-speech-cloud-run",
                 "cd Prov_TF && terraform init",
-                "cd Prov_TF && terraform apply -auto-approve -var 'region=${GOOGLE_CLOUD_REGION}'"
+                "cd Prov_TF && terraform apply -auto-approve var-file=terraform.tfvars"
             ]
         }
     }
