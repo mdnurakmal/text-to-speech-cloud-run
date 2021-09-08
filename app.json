@@ -6,6 +6,7 @@
     "hooks": {
         "prebuild": {
             "commands": [
+                "gsutil mb gs://text-to-speech-cloud-run-bucket",
                 "cd Init_TF && terraform init",
                 "cd Init_TF &&  terraform apply -auto-approve",
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
