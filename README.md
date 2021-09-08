@@ -30,6 +30,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 - How to remove deleted service account automatically ?
 - Why cloud run directory is removed and files merged ?
 - How to terraform destroy automatically ?
+- GOOGLE_CLOUD_REGION only exists in cloud run button container
 
 
 # Original Repo from
