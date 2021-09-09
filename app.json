@@ -11,9 +11,10 @@
                 "sudo chmod +x ./install.sh",
                 "sudo ./install.sh",
                 "sudo rm /usr/local/bin/terraform",
+                "sudo unlink /usr/local/bin/terraform",
                 "sudo tfswitch -u",
-                "sudo ls",
-                "sudo ln -sf $HOME/text-to-speech-cloud-run/bin/terraform /usr/local/bin/terraform",
+
+                "sudo ln -sf $HOME/bin/terraform /usr/local/bin/terraform",
                 "sudo chmod +x /usr/local/bin/terraform",
 
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
