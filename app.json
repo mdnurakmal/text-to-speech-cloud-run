@@ -12,7 +12,7 @@
                 "sudo ./install.sh",
                 "tfswitch -u",
                 "sudo rm /usr/local/bin/terraform",
-                "sudo ln -sf $HOME/bin/erraform /usr/local/bin/terraform",
+                "sudo ln -sf $HOME/text-to-speech-cloud-run/bin/erraform /usr/local/bin/terraform",
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
                 "gsutil mb gs://text-to-speech-cloud-run-bucket",
