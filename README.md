@@ -32,6 +32,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 - How to terraform destroy automatically ?
 - GOOGLE_CLOUD_REGION only exists in cloud run button container
 - Import after Init then Apply
+- Cloud run button terraform version is outdated
 
 
 # Original Repo from
