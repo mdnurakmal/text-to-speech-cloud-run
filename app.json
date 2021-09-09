@@ -7,7 +7,7 @@
         "prebuild": {
             "commands": [
                 "echo $PWD",
-                "sudo wget 'https://releases.hashicorp.com/terraform/1.0.6/terraform_1.0.6_linux_amd64.zip'",
+                "sudo wget \"https://releases.hashicorp.com/terraform/1.0.6/terraform_1.0.6_linux_amd64.zip\"",
                 "sudo unzip terraform_1.0.6_linux_amd64.zip",
                 "sudo rm /usr/local/bin/terraform",
                 "sudo ln -sf $HOME/terraform /usr/local/bin/terraform",
