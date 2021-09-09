@@ -10,9 +10,9 @@
                 "$(sudo curl -fsSLO https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh)",
                 "sudo chmod +x ./install.sh",
                 "sudo ./install.sh",
-                "sudo tfswitch -u",
                 "sudo rm /usr/local/bin/terraform",
-                "sudo ln -sf $HOME/text-to-speech-cloud-run/bin/terraform /usr/local/bin/terraform",
+                "sudo tfswitch -u",
+
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
                 "gsutil mb gs://text-to-speech-cloud-run-bucket",
