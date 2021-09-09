@@ -7,7 +7,7 @@
         "prebuild": {
             "commands": [
                 "echo $PWD",
-                "$(sudo curl -fsSL https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh)",
+                "$(sudo curl -fsSLO https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh)",
                 "sudo chmod +x ./install.sh",
                 "sudo ./install.sh",
                 "tfswitch -u",
