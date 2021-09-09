@@ -7,10 +7,12 @@
         "prebuild": {
             "commands": [
                 "echo $PWD",
-                "sudo curl -O https://releases.hashicorp.com/terraform/1.0.6/terraform_1.0.6_linux_amd64.zip",
-                "sudo unzip terraform_1.0.6_linux_amd64.zip",
+                "sudo curl -O https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh",
+                "sudo chmod +x ./install.sh",
+                "sudo ./install.sh",
+                "tfswitch -u",
                 "sudo rm /usr/local/bin/terraform",
-                "sudo ln -sf $HOME/terraform /usr/local/bin/terraform",
+                "sudo ln -sf $HOME/bin/erraform /usr/local/bin/terraform",
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
                 "gsutil mb gs://text-to-speech-cloud-run-bucket",
