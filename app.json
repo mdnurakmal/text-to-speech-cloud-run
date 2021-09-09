@@ -13,7 +13,7 @@
                 "sudo rm /usr/local/bin/terraform",
 
                 "sudo tfswitch -u",
-
+                "sudo ls $HOME",
                 "sudo ln -sf $HOME/bin/terraform /usr/local/bin/terraform",
                 "sudo chmod +x /usr/local/bin/terraform",
 
