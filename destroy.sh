@@ -1,10 +1,4 @@
 #!bin/bash
-cd Prov_TF
-terraform init
-terraform state pull
-terraform destroy -auto-approve -input=false
-
-cd ..
 
 cd Init_TF 
 terraform init
