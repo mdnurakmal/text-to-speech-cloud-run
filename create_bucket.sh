@@ -1,5 +1,5 @@
 #!/bin/bash
-gsutil -q stat gs://text-to-speech-cloud-run-bucket
+gsutil -q stat gs://text-to-speech-cloud-run-bucket/terraform
 
 return_value=$?
 
