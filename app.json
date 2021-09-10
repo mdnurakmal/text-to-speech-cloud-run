@@ -18,9 +18,8 @@
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
                 "gsutil mb gs://text-to-speech-cloud-run-bucket",
-                "cd ..",
 
-                "cd .. && mv /text-to-speech-cloud-run /temp",
+                "mv $HOME/text-to-speech-cloud-run $HOME/temp",
                 "echo $PWD",
                 "mkdir text-to-speech-cloud-run",
                 "gcsfuse text-to-speech-cloud-run-bucket /text-to-speech-cloud-run",
