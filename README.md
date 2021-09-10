@@ -10,7 +10,7 @@
 Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/mdnurakmal/text-to-speech-cloud-run.git)
 
 
-![Alt text](/img/1.png?raw=true "Title")
+![Alt text](/img/2.png?raw=true "Title")
 
 <br>
 
