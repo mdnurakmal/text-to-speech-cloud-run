@@ -1,1 +1,1 @@
-region=$GOOGLE_CLOUD_REGION
+region="$GOOGLE_CLOUD_REGION"
