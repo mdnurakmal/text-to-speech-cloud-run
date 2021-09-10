@@ -24,7 +24,7 @@
                 "mkdir $HOME/bucket",
                 "cp -a $HOME/text-to-speech-cloud-run/. $HOME/bucket/",
                 "echo $PWD",
-                "gcsfuse text-to-speech-cloud-run-bucket $HOME/bucket",
+                "gcsfuse -o nonempty text-to-speech-cloud-run-bucket $HOME/bucket",
 
          
 
