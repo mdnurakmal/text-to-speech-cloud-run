@@ -20,7 +20,6 @@
                 "gsutil mb gs://text-to-speech-cloud-run-bucket",
 
                 "cd Init_TF && terraform init",
-                "cd Init_TF && terraform import google_storage_bucket.text-to-speech-cloud-run-bucket text-to-speech-cloud-run-bucket",
                 "cd Init_TF && terraform apply -auto-approve",
 
                 "gcloud builds submit -q",
