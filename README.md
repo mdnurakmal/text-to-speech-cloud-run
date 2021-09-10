@@ -1,5 +1,10 @@
 # Serverless text to speech build on GCP , GO
 
+
+![Alt text](/img/2.png?raw=true "Title")
+
+<br>
+
 # Usage
 
 1. Create a project in Google Cloud Console
@@ -17,9 +22,6 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 . destroy.sh
 ```
 
-![Alt text](/img/2.png?raw=true "Title")
-
-<br>
 
 # Learning notes
 - gcloud shell can access GCP credentials without using json if it is set using the config set command in gcloud shell
