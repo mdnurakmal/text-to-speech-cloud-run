@@ -22,11 +22,9 @@
      
            
                 "mkdir $HOME/bucket",
+                "gcsfuse text-to-speech-cloud-run-bucket $HOME/bucket",
                 "cp -a $HOME/text-to-speech-cloud-run/. $HOME/bucket/",
                 "echo $PWD",
-                "gcsfuse -o nonempty text-to-speech-cloud-run-bucket $HOME/bucket",
-
-         
 
                 "cd $HOME/bucket/Init_TF && terraform init",
                 "cd $HOME/bucket/Init_TF && terraform apply -auto-approve",
