@@ -16,8 +16,8 @@
 
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
-                "sudo chmod +x ./create_bucket.sh",
-                ". ./create_bucket.sh",
+                "sudo chmod +x ./create_bucket.sh $GOOGLE_CLOUD_PROJECT",
+                "sudo ./create_bucket.sh",
 
                 "cd Init_TF && terraform init",
                 "cd Init_TF && terraform   terraform state pull",
