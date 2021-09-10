@@ -34,7 +34,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 - Cloud run button terraform version is outdated
 - Bash environment variables are not accessible from auto.tfvars file , use cli to pass var 
 - GCSFuse copying files is extremely slow
-- unable to run gsutil in the same shell as cloud run
+- unable to run gsutil in the same shell as cloud run when using -q because of conflicting exit code
 
 
 # Original Repo from

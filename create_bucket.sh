@@ -1,6 +1,6 @@
 #!/bin/bash
 gcloud config set project $1
-gsutil -q stat gs://text-to-speech-cloud-run-bucket/terraform
+gsutil -q stat gs://text-to-speech-cloud-run-bucket/terraform/init_state/default.tfstate
 
 return_value=$?
 
