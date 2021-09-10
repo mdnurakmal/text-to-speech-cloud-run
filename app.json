@@ -1,3 +1,11 @@
+{ 
+    
+    "build": {
+        "skip": true
+        },
+    "hooks": {
+        "prebuild": {
+            "commands": [
 
                 "$(sudo curl -fsSLO https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh)",
                 "sudo chmod +x ./install.sh",
