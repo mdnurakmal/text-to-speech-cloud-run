@@ -17,6 +17,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 
 # How to remove
 1. Open cloud shell / If data in cloud shell is deleted , clone the repository again
+2. Run the following command in cloud shell
 
 ```shell
 . destroy.sh
