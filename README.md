@@ -25,6 +25,9 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 # Objective
 - One click to deploy GO app using terraform
 
+# TODO
+- include logging from GO 
+
 
 # Learning notes
 - gcloud shell can access GCP credentials without using json if it is set using the config set command in gcloud shell
