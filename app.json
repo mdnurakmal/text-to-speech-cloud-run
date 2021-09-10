@@ -6,7 +6,7 @@
     "hooks": {
         "prebuild": {
             "commands": [
-                "echo $PWD",
+
                 "$(sudo curl -fsSLO https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh)",
                 "sudo chmod +x ./install.sh",
                 "sudo ./install.sh",
@@ -14,9 +14,17 @@
                 "tfswitch -u -b /bin",
                 "sudo ln -sf $HOME/bin/terraform /usr/local/bin/terraform",
 
+     
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
                 "gsutil mb gs://text-to-speech-cloud-run-bucket",
+                "cd ..",
+                "mv /text-to-speech-cloud-run /temp",
+                "mkdir text-to-speech-cloud-run",
+                "gcsfuse text-to-speech-cloud-run-bucket /text-to-speech-cloud-run",
+
+                "cp -a /temp/. /text-to-speech-cloud-run/",
+
 
                 "cd Init_TF && terraform init",
                 "cd Init_TF && terraform apply -auto-approve",

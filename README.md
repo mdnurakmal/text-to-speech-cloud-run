@@ -33,6 +33,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 - GOOGLE_CLOUD_REGION only exists in cloud run button container
 - Import after Init then Apply
 - Cloud run button terraform version is outdated
+- Bash environment variables not accessible from auto.tfvars file , use cli to pass var 
 
 
 # Original Repo from
