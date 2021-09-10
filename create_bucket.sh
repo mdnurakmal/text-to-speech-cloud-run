@@ -5,7 +5,7 @@ gsutil -q stat gs://text-to-speech-cloud-run-bucket/terraform
 return_value=$?
 
 if [ $return_value = 0 ]; then
-    gsutil mb gs://text-to-speech-cloud-run-bucket
+    echo "bucket exist"
 else
-     echo "bucket exist"
+    gsutil mb gs://text-to-speech-cloud-run-bucket
 fi
