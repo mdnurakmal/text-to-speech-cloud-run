@@ -14,7 +14,7 @@
                 "tfswitch -u -b /bin",
                 "sudo ln -sf $HOME/bin/terraform /usr/local/bin/terraform",
 
-
+                "touch hello",
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
                 "gsutil mb gs://text-to-speech-cloud-run-bucket",
