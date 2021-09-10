@@ -1,6 +1,6 @@
 #!bin/bash
 
-cd Init_TF 
+cd terraform 
 terraform init
 terraform state pull
 terraform destroy -auto-approve -input=false

@@ -1,4 +1,4 @@
-resource "null_resource" "health_check" {
+resource "null_resource" "cloudbuild" {
 
  provisioner "local-exec" {
 
@@ -8,14 +8,14 @@ resource "null_resource" "health_check" {
    depends_on = [google_project_service.cloudbuild]
 }
 
-resource "null_resource" "health_check2" {
+resource "null_resource" "docker_pull" {
 
  provisioner "local-exec" {
 
     command = "docker pull gcr.io/${data.google_project.project.project_id}/text-to-speech-cloud-run"
   }
 
-   depends_on = [null_resource.health_check]
+   depends_on = [null_resource.cloudbuild]
 }
 
 

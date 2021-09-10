@@ -19,9 +19,9 @@
                 "sudo chmod +x ./create_bucket.sh",
                 "sudo ./create_bucket.sh $GOOGLE_CLOUD_PROJECT",
 
-                "cd Init_TF && terraform init",
-                "cd Init_TF && terraform state pull",
-                "cd Init_TF && terraform apply -auto-approve -var region=$GOOGLE_CLOUD_REGION"
+                "cd terraform && terraform init",
+                "cd terraform && terraform state pull",
+                "cd terraform && terraform apply -auto-approve -var region=$GOOGLE_CLOUD_REGION"
             ]
         }
     }
