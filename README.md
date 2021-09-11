@@ -25,6 +25,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 
 # Objective
 - One click to deploy GO app on Google Cloud Platform using terraform
+- Serverless architecture
 
 # TODO
 - include logging from GO 
