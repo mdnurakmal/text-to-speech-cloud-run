@@ -24,7 +24,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 ```
 
 # Objective
-- One click to deploy GO app using terraform
+- One click to deploy GO app on Google Cloud Platform using terraform
 
 # TODO
 - include logging from GO 
