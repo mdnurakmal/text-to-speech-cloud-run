@@ -1,4 +1,5 @@
 # The Cloud Run service
+
 resource "google_cloud_run_service" "text_to_speech" {
   name                       = local.service_name
   location                   = var.region
