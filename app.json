@@ -26,7 +26,7 @@
         },
         "postcreate": {
             "commands": [
-                "gcloud run services update text-to-speech-cloud-run --service-account text-to-speech-worker-id@$GOOGLE_CLOUD_PROJECT.iam.gserviceaccount.com"
+                "gcloud run services update text-to-speech-cloud-run --service-account text-to-speech-worker-id@$GOOGLE_CLOUD_PROJECT.iam.gserviceaccount.com --platform managed"
             ]
         }
     }
