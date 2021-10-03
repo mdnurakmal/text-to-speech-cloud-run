@@ -16,6 +16,8 @@ resource "google_cloud_run_service" "text_to_speech" {
     percent         = 100
     latest_revision = true
   }
+
+   depends_on = [null_resource.cloudbuild]
 }
 
 # Set service public
